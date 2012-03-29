@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<executable>
+	<title>addFibers</title>
+	<description>Add two vtk fiber files together</description>
+	<contributor>Gwendoline Roger</contributor>
+	<parameters>
+		<label>Add two vtk fiber files: Input/Output</label>
+		<description>Add two vtk fiber files</description>
+		<string-vector>
+			<name>fiberFiles</name>
+			<flag>-f</flag>
+			<longflag>--fiberFiles</longflag>
+			<label>fibers to add</label>
+			<channel>input</channel>
+			<description>Input fibers to add, separate it by a comma</description>
+		</string-vector>
+		<file>
+			<name>fiberOutput</name>
+			<longflag>--fiber_output</longflag>
+			<flag>o</flag>
+			<label>Fiber Output</label>
+			<description>Output fiber file</description>
+			<channel>output</channel>
+		</file>
+	</parameters>
+</executable>
